@@ -19,14 +19,18 @@ export const DivCenter = styled.div`
 `;
 
 export const Form = styled.div`
-  width: 450px;
+  width: 50vw;
   background-color: #ffffff;
   border: 5px solid;
   padding: 8px;
   border-image: linear-gradient(270deg, #12FA8C, #019AFA 100%) 1;
 
-  @media (max-width: 550px) {
+  @media (max-width: 700px) {
     width: 92%;
+  } 
+
+  @media (max-width: 400px) {
+    width: 90%;
   } 
 `;
 

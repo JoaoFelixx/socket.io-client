@@ -1,16 +1,16 @@
 import Navbar from './Navbar';
 import FormChat from './FormChat';
 import CardAbout from './CardAbout';
+import GroupInfo from './GroupInfo';
 import FlexContainer from './FlexContainer'; 
 import ChatContainer from './ChatContainer';
 import InputContainer from './InputContainer'; 
-import Messages from './Messages';
 
 export {
   Navbar,
   FormChat,
   CardAbout,
-  Messages,
+  GroupInfo,
   FlexContainer,
   ChatContainer,
   InputContainer,
