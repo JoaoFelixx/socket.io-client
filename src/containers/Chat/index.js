@@ -1,19 +1,8 @@
-import { 
-  Navbar,
-  FormChat,
-  CardAbout,
-  FlexContainer,
-} from '../../components';
+import { Messages } from '../../components';
 
-function Chat() {
+function Chat({ socket, username, room }) {
   return (
-    <div>
-      <Navbar />
-      <FlexContainer>
-        <CardAbout/>
-        <FormChat />
-      </FlexContainer>
-    </div>
+    <Messages socket={socket} username={username} room={room} />
   )
 }
 
