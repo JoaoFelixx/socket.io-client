@@ -16,8 +16,12 @@ body {
 
 .message-container {
   width: 100%;
+  height: 80vh;
   overflow-y: scroll;
-  overflow-x: hidden;
+
+  @media screen and (max-width: 800px) {
+    height: 100vh;  
+  }
 }
 
 .message-container::-webkit-scrollbar {

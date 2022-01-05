@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Info = styled.div`
+export const Group = styled.div`
   grid-area: groupInfo;
   background-color: rgb(77,77,77);
   padding: 8px;
@@ -8,5 +8,6 @@ export const Info = styled.div`
   @media (max-width: 800px) {
     visibility:hidden;
     display: none;
+    grid-area: 0;
   }
 `;

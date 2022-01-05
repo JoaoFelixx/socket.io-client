@@ -2,7 +2,7 @@ const INITIAL_STATE = {
   language: 'pt',
   theme: 'white',
   username: 'Jotaro',
-  room: '123',
+  room: '',
   showChat: false,
 } 
 

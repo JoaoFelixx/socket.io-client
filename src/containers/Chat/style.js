@@ -25,35 +25,32 @@ export const ChatName = styled.div`
 
 export const ChatFoot = styled.div` 
   position: absolute;
-  display: flex;
   bottom: 10px;
+  display: flex;
   border: 1px solid #263238;
   justify-content: space-between;
 
   @media (max-width: 800px) {
-    width: 100%;
+    width: 99%;
   } 
 `;
 
 export const Button = styled.button`
+  width: 20%;
   border: 0;
-  display: grid;
   place-items: center;
   cursor: pointer;
-  flex: 15%;
   background: transparent;
   outline: none;
   font-size: 25px;
-  color: lightgray;
-
-  &:hover {
-    transition: 1s;
-    background: #2e7d32;
-  }
+  color: #fff;
+  background-color: #0ced18;
+  
+  &:hover { background-color: #2e7d32; }
 `;
 
 export const Input = styled.input`
-  flex: 85%;
+  width: 80%;
   border: 0;
   padding: 0 0.7em;
   font-size: 1em;
