@@ -14,7 +14,7 @@ import {
   MessageContent,
 } from './style';
 import {
-  FlexContainer,
+  GridContainer,
   GroupInfo,
 } from '../../components';
 
@@ -47,7 +47,7 @@ function Chat({ socket }) {
   }, [socket]);
 
   return (
-    <FlexContainer>
+    <GridContainer>
       <GroupInfo messageList={messageList} />
       <ChatWindow>
         <Header>
@@ -91,7 +91,7 @@ function Chat({ socket }) {
           <Button onClick={sendMessage}>&#9658;</Button>
         </ChatFoot>
       </ChatWindow>
-    </FlexContainer>
+    </GridContainer>
   )
 }
 

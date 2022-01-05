@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 export const ChatWindow = styled.div`
-  flex-grow: 2;
+  grid-area: messages;
 `;
 
 export const ChatBody = styled.div`
-  border: 1px solid #263238;
   background: #fff;
   padding: 0;
 `;
 
 export const Header = styled.div`
+  width: 100%;
   background: #263238;
   cursor: pointer;
 `;
@@ -24,10 +24,15 @@ export const ChatName = styled.div`
 `;
 
 export const ChatFoot = styled.div` 
-
-  border: 1px solid #263238;
-  border-top: none;
+  position: absolute;
   display: flex;
+  bottom: 10px;
+  border: 1px solid #263238;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  } 
 `;
 
 export const Button = styled.button`
