@@ -5,6 +5,7 @@ import {
   Members,
   Separator,
 } from './style';
+import { localizedStrings } from '../../constants'
 
 function GroupInfo({ messageList }) {
 
@@ -56,7 +57,7 @@ function GroupInfo({ messageList }) {
   return (
     <Group>
       <Separator>
-        <Title> Membros do Grupo </Title>
+        <Title> { localizedStrings.groupMembers } </Title>
       </Separator>
       <Info />
     </Group>

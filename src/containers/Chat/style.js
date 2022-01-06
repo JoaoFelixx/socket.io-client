@@ -30,9 +30,7 @@ export const ChatFoot = styled.div`
   border: 1px solid #263238;
   justify-content: space-between;
 
-  @media (max-width: 800px) {
-    width: 99%;
-  } 
+  @media (max-width: 800px) { width: 99%; } 
 `;
 
 export const Button = styled.button`

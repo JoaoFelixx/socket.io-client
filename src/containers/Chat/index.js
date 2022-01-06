@@ -14,8 +14,8 @@ import {
   MessageContent,
 } from './style';
 import {
-  GridContainer,
   GroupInfo,
+  GridContainer,
 } from '../../components';
 
 function Chat({ socket }) {
@@ -36,6 +36,7 @@ function Chat({ socket }) {
     };
 
     await socket.emit("send_message", messageData);
+    
     setMessageList((list) => [...list, messageData]);
     setCurrentMessage("");
   };

@@ -11,12 +11,7 @@ function App() {
 
   return (
     <div>
-      {!showChat ? (
-        <Login socket={socket} />
-
-      ) : (
-        <Chat socket={socket} />
-      )}
+      {  !showChat ? <Login socket={socket} /> : <Chat socket={socket} />  }
     </div>
   );
 }

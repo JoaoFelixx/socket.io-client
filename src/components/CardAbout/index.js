@@ -1,7 +1,7 @@
 import {
+  Image,
   FlexItem,
   DivCenter,
-  Image,
 } from './style';
 
 function CardAbout() {

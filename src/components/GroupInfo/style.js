@@ -14,7 +14,7 @@ export const Group = styled.div`
 export const Title = styled.h1`
   color: #fff;
   font-weight: 700;
-` 
+`;
 
 export const Members = styled.h3` 
   display: block;

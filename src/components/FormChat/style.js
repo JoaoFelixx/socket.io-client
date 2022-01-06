@@ -25,13 +25,9 @@ export const Form = styled.div`
   padding: 8px;
   border-image: linear-gradient(270deg, #12FA8C, #019AFA 100%) 1;
 
-  @media (max-width: 700px) {
-    width: 92%;
-  } 
+  @media (max-width: 700px) { width: 92%; } 
+  @media (max-width: 400px) { width: 90%; } 
 
-  @media (max-width: 400px) {
-    width: 90%;
-  } 
 `;
 
 export const Title = styled.h1`
@@ -64,7 +60,6 @@ export const ButtonEnter = styled.button`
   border: none;
   float: right;
   cursor: pointer;
-
 
   &:hover {
     transition: 1s;
