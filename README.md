@@ -22,3 +22,8 @@ yarn start / npm start
 ``` 
 
 Logo após é só testar !
+
+Referencias: 
+
+`https://github.com/bradtraversy/chatcord`
+`https://github.com/machadop1407/react-socketio-chat-app`
