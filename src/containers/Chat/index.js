@@ -51,7 +51,7 @@ function Chat({ socket }) {
       <GroupInfo messageList={messageList} />
       <ChatWindow>
         <Header>
-          <ChatName> Melhor Grupo {room} </ChatName>
+          <ChatName> {room} </ChatName>
         </Header>
         <ChatBody>
           <ScrollToBottom className='message-container'>

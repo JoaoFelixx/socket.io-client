@@ -1,20 +1,28 @@
 import { useEffect, memo, useState } from 'react';
-import { useSelector } from 'react-redux';
 import {
+  Title,
   Group,
+  Members,
+  Separator,
 } from './style';
 
 function GroupInfo({ messageList }) {
 
   const [members, setMembers] = useState([]);
-  const room = useSelector(state => state.room);
 
   const Info = memo(() => {
-
     return (
-      <div>
-        <p>{room} </p> <br />
-        {members.map((member) => <p> {member} </p>)}
+      <div >
+        {members
+          .map((member) => member
+            .map(user => (
+              <div> 
+                <Members> {user} </Members>
+                <hr />
+              </div>
+            )
+          ))
+        }
       </div>
     )
   })
@@ -28,15 +36,15 @@ function GroupInfo({ messageList }) {
           if (!author) return []
 
           data.push(author);
-          
+
           const allMembers = acc.concat(data)
 
           const removeTheSameNames = allMembers.filter((member, index) => allMembers.indexOf(member) === index);
-          
-          return acc = removeTheSameNames; 
+
+          return acc = removeTheSameNames;
 
         }, [])
-      )
+        )
 
       setMembers(getMembers)
 
@@ -47,7 +55,9 @@ function GroupInfo({ messageList }) {
 
   return (
     <Group>
-      <h1 style={{ color: '#fff' }}> Membros do Grupo </h1>
+      <Separator>
+        <Title> Membros do Grupo </Title>
+      </Separator>
       <Info />
     </Group>
   )

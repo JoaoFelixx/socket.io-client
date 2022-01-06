@@ -65,7 +65,7 @@ export const MessageContent = styled.div`
   border-radius: 5px;
   color: white;
   margin: 5px;
-  padding: 2px;
+  padding: 8px;
   overflow-wrap: break-word;
   word-break: break-word;
 `;
