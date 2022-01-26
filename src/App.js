@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { Login, Chat } from "./containers";
 import { useSelector } from "react-redux";
 
-const socket = io.connect("https://socket-io-server-pdaox7neb-joaofelixx.vercel.app");
+const socket = io.connect("https://socket-io-server.vercel.app/");
 
 function App() {
 
