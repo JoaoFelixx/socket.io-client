@@ -4,8 +4,8 @@ import CardAbout from './CardAbout';
 import GroupInfo from './GroupInfo';
 import FlexContainer from './FlexContainer'; 
 import ChatContainer from './ChatContainer';
-import InputContainer from './InputContainer'; 
 import GridContainer from './GridContainer';
+import InputContainer from './InputContainer';
 
 export {
   Navbar,

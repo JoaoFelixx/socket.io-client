@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Group = styled.div`
+const Group = styled.div`
   grid-area: groupInfo;
   background-color: #254c5f;
 
@@ -11,20 +11,22 @@ export const Group = styled.div`
   }
 `;
 
-export const Title = styled.h1`
+const Title = styled.h1`
   color: #fff;
   font-weight: 700;
 `;
 
-export const Members = styled.h3` 
+const Members = styled.h3` 
   display: block;
   color: #fff;
   font-size: 24px;
   padding: 4px;
 `;
 
-export const Separator = styled.div`
+const Separator = styled.div`
   padding: 12px;
   width: 100%;
   background-color: #263238;
 `;
+
+export { Title, Group, Members, Separator };

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FlexItem = styled.div`
+const FlexItem = styled.div`
   flex-grow: 2;
   background-image: url('./img/lighthouse.jpg');
   background-attachment: fixed;
@@ -11,14 +11,14 @@ export const FlexItem = styled.div`
   height: auto;
 `;
 
-export const DivCenter = styled.div`
+const DivCenter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center; 
   height: 100vh;
 `;
 
-export const Form = styled.div`
+const Form = styled.div`
   width: 50vw;
   background-color: #ffffff;
   border: 5px solid;
@@ -30,11 +30,11 @@ export const Form = styled.div`
 
 `;
 
-export const Title = styled.h1`
+const Title = styled.h1`
   text-align: center;
 `;
 
-export const Input = styled.input`
+const Input = styled.input`
   width: 99%;
   height: 30px;
   font-size: 16px;
@@ -46,12 +46,12 @@ export const Input = styled.input`
     outline: 0;  }
 `;
 
-export const Label = styled.label`
+const Label = styled.label`
   font-weight: bold;
   font-size: 18px;
 `;
 
-export const ButtonEnter = styled.button`
+const ButtonEnter = styled.button`
   width: 100px;
   background-color: #55aaff;
   color: #ffffff;
@@ -66,3 +66,13 @@ export const ButtonEnter = styled.button`
     background-color: #3487da;
   }
 `;
+
+export { 
+  Form,
+  Title,
+  Label,
+  Input,
+  FlexItem,
+  DivCenter,
+  ButtonEnter,
+}

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FlexItem = styled.div`
+const FlexItem = styled.div`
   flex-grow: 1;
   background-color: rgb(77,77,77);
   height: 100vh;
@@ -11,13 +11,15 @@ export const FlexItem = styled.div`
   }
 `;
 
-export const DivCenter = styled.div`
+const DivCenter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center; 
   height: 100vh;
 `;
 
-export const Image = styled.img`
+const Image = styled.img`
   width: 250px;
 `;
+
+export { DivCenter, FlexItem, Image };
